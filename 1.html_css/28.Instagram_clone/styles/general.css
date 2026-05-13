@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --primary : white;
+    --secondary: #fafafa;
+    --border: #dbdbdb;
+
+    --story-border: #c7c7c7;
+    
+    --text-dark: #262626;
+    --text-light: #999;
+}
+
+:root.darkTheme .header__theme-button-sun {
+    display: unset;
+}
+
+:root.darkTheme .header__theme-button-moon {
+    display: none;
+}
+
+:root.darkTheme {
+    --primary: black;
+    --secondary: #050505;
+    --border: #262626;
+
+    --story-border: #707070;
+
+    --text-dark: #fafafa;
+    --text-light: #999;
+}
