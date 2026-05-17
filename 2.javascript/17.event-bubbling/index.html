@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Event Bubbling</title>
+    <style>
+        body * {
+            margin: 10px;
+            border: 1px solid red;
+        }
+        p {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <form onclick="alert('form')">FORM
+        <div onclick="alert('div')">DIV
+            <p onclick="alert('p')">P</p>
+        </div>
+    </form> -->
+    <!-- <form onclick="alert('form')">FORM
+        <div onclick="">DIV
+            <p>P</p>
+        </div>
+    </form> -->
+    <form onclick="alert('form')">FORM
+        <div onclick="">DIV
+            <p onclick="event.stopPropagation()">P</p>
+        </div>
+    </form>
+
+    <script>
+        const form = document.querySelector("form");
+        const div = document.querySelector("div");
+        const p = document.querySelector("p");
+
+        // event.target : 실제 이벤트가 시작된 요소
+        // this/event.currentTarget) : 핸들러가 할당된 요소
+        form.onclick = function (event) {
+            event.target.style.backgroundColor = "yellow";
+            alert(`target = ${event.target.tagName}, this = ${this.tagName}, curret = ${event.currentTarget.tagName}`);
+            event.target.style.backgroundColor = "";
+        }
+    </script>
+</body>
+
+</html>
