@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Event Capturing</title>
+        <style>
+            body * {
+                margin: 10px;
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            FORM
+            <div>
+                DIV
+                <p>P</p>
+            </div>
+        </form>
+        
+        <script>
+            for (let element of document.querySelectorAll("*")) {
+                // element.addEventListener("click", e => alert(`capturing: ${element.tagName}`), { capture: true })
+                element.addEventListener("click", e => alert(`capturing: ${element.tagName}`), true)
+                element.addEventListener("click", e => alert(`bubbling: ${element.tagName}`))
+            }
+        </script>
+    </body>
+</html>
