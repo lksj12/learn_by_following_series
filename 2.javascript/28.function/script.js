@@ -86,6 +86,16 @@ score.reset();
 console.log(score.current());
 
 
+// const increment = () => {
+//     let counter = 0;
+//     console.log(counter);
+//     const number = (num) => console.log(`it is  ${num}`);
+//     return () => {++counter; number(counter)};
+// }
+
+// increment()
+// increment()
+
 const increment = () => {
     let counter = 0;
     console.log(counter);
