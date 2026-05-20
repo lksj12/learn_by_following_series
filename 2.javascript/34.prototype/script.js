@@ -12,6 +12,17 @@ console.log(user.hasOwnProperty("email"));
 //     this.name = name;
 //     this.email = email;
 //     this.birthday = new Date(birthday);
+//     this.calculateAge = function () {
+//         const diff = Date.now() - this.birthday.getTime();
+//         const ageDate = new Date(diff);
+//         return Math.abs(ageDate.getUTCFullYear()-1970);
+//     }
+// }
+
+// function Person (name, email, birthday) {
+//     this.name = name;
+//     this.email = email;
+//     this.birthday = new Date(birthday);
 // }
 
 // Person.prototype.calculateAge = function () {
