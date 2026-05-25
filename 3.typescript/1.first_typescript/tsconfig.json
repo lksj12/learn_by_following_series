@@ -5,7 +5,7 @@
         "target": "es2015", //ES6
         "noEmitOnError": true, //Errors are occured, the ts files are not compiled.
         "module": "esnext",
-        "moduleResolution": "Node",
+        "moduleResolution": "bundler",
         "esModuleInterop": true,
         "lib": ["ESNext", "DOM"],
         "strict": true,
