@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./build/js",
+        "target": "es2015", //ES6
+        "noEmitOnError": true, //Errors are occured, the ts files are not compiled.
+        "module": "esnext",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "lib": ["ESNext", "DOM"],
+        "strict": true,
+    },
+
+    "include": [
+        "./src/**/*.ts"
+    ]
+}
