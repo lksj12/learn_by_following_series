@@ -66,3 +66,29 @@ func2 = function () {
 //     const x = "hi";
 //     return x;
 // }
+// // Null, Undefined
+// let number1: number = undefined
+// let string9: string = null;
+// let object: { a: 10, b: false } = undefined;
+// let array: any[] = null;
+// let undefined1: undefined = null;
+// let null1: null = undefined;
+// let void1: void = null;
+let void2 = undefined;
+// void
+function greeting() {
+    console.log('hi');
+}
+const hi = greeting();
+console.log(hi); // undefined
+// never
+function throwError() {
+    throw new Error('error');
+}
+function keepProcessing() {
+    while (true) {
+        console.log('hi');
+    }
+}
+const never = [];
+// never.push(1)
