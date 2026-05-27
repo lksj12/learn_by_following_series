@@ -5,7 +5,7 @@
         "target": "ES2015",
         "noEmitOnError": false,
         "module": "ESNext",
-        "moduleResolution": "Node",
+        "moduleResolution": "bundler",
         "esModuleInterop": true, 
         "lib": ["ESNext", "DOM"],
         "strict": true,
