@@ -19,11 +19,11 @@ getArrayLength<string>(array2);
 getArrayLength<boolean>(array3);
 
 
-// interface Vehicle_any {
-//     name: string;
-//     color: string;
-//     option: any;
-// }
+interface Vehicle_any {
+    name: string;
+    color: string;
+    option: any;
+}
 
 interface Vehicle<T> {
     name: string;
