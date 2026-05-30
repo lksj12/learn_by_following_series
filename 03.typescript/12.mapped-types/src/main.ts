@@ -17,17 +17,17 @@ type Users = 'John' | 'Han' | 'Kim';
 
 type UserFirstNames = { [K in Users]: string };
 
-const userFirstNameInfo: UserFirstNames = {
-    John: 'Doe',
-    Han: "Ho",  
-    Kim: "jun",
-}
-
 // type UserFirstNames = {
 //     John: string,
 //     Han: string,
 //     Kim: string,
 // }
+
+const userFirstNameInfo: UserFirstNames = {
+    John: 'Doe',
+    Han: "Ho",  
+    Kim: "jun",
+}
 
 type Users2 = 'John' | 'Han' | 'Kim';
 
