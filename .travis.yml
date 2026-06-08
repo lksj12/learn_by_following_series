@@ -7,6 +7,7 @@ services:
 
 before_install:
   - echo "start creating an image with dockerfile"
+  - cd 04.docker/04.node-react
   - docker build -t react -f dockerfile.dev .
 
 script:
