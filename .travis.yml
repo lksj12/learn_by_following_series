@@ -1,10 +1,16 @@
+sudo: required
+
 language: generic
 
 services:
   - docker
 
 before_install:
-  - cd 04.docker/04.node-react
+  - echo "start creating an image with dockerfile"
+  - docker build -t react -f dockerfile.dev .
 
 script:
-  - docker build -t react-op .
+  - docker run -e CI=true react npm run test -- --coverage
+
+after_success:
+  - echo "Test Success"
