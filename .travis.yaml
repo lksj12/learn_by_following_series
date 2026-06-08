@@ -1,0 +1,10 @@
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - cd 04.docker/04.node-react
+
+script:
+  - docker build -t react-op .
