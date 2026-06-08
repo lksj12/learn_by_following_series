@@ -1,0 +1,8 @@
+#베이스 이미지 명시
+FROM alpine
+
+#추가 파일 다운
+# RUN command
+
+#컨테이너 시작시 실행될 명렁 명시
+CMD ["echo", "Hello"]
