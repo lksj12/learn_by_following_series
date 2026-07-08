@@ -1,0 +1,17 @@
+{
+  "todos": [
+    {
+      "userId": 1,
+      "title": "운동하기",
+      "completed": false,
+      "id": "1"
+    },
+    {
+      "userId": 1,
+      "title": "청소하기",
+      "completed": false,
+      "id": "9ZpP9p_H0UU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
