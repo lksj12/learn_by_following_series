@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Gloves",
+        "description": "good to wear",
+        "price": 15
+    },
+    {
+        "name": "T-shirt",
+        "description": "good to wear",
+        "price": 20
+    },
+    {
+        "name": "Jeans",
+        "description": "good to wear",
+        "price": 30
+    }
+]
